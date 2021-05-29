@@ -45,11 +45,11 @@ assert len(colors) == 1000, "There should be 1000 random numbers for colors"
 # ### Part 3 
 # 
 # #### Part 3.1
-DataFrame.plot(data,kind='scatter',s='50')
+data.plot(kind='scatter',s='50',c=colors,colormap='jet',edgecolor='black')
 # Create a scatter plot of points with random colors
 # 
 # #### Part 3.2
-# 
+matplotlib.pyplot
 # #### Part 3.3
 # 
 

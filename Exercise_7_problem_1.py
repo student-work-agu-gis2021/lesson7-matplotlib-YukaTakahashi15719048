@@ -7,7 +7,7 @@
 # 
 # ```
 # import numpy as np
-# random_numbersc
+# random_numbers = np.random.rand(10)
 # 
 # ```
 # 
@@ -19,8 +19,8 @@ import numpy as np
 import pandas as pd
 
 # YOUR CODE HERE 1 to set data
-x = np.random.randn(1000)
-y = np.random.randn(1000)
+x = np.random.rand(1000)
+y = np.random.rand(1000)
 data = pd.DataFrame(zip(x,y))
 
 # Check your random values
@@ -34,7 +34,7 @@ assert len(data) == 1000, "There should be 1000 rows of data."
 # 
 
 # YOUR CODE HERE 2 to set colors
-
+colors = tuple(np.random.choice(range(256), size=1000))
 # This test print should print out 10 first numbers in the variable colors
 print(colors[0:10])
 
@@ -45,7 +45,7 @@ assert len(colors) == 1000, "There should be 1000 random numbers for colors"
 # ### Part 3 
 # 
 # #### Part 3.1
-# 
+DataFrame.plot(data,kind='scatter',s='50')
 # Create a scatter plot of points with random colors
 # 
 # #### Part 3.2

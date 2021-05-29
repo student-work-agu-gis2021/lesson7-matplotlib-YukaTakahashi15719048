@@ -7,7 +7,7 @@
 # 
 # ```
 # import numpy as np
-# random_numbers = np.random.rand(10)
+# random_numbersc
 # 
 # ```
 # 
@@ -19,6 +19,9 @@ import numpy as np
 import pandas as pd
 
 # YOUR CODE HERE 1 to set data
+x = np.random.randn(1000)
+y = np.random.randn(1000)
+data = pd.DataFrame(zip(x,y))
 
 # Check your random values
 print(data.head())

@@ -57,12 +57,16 @@ print("Number of rows:", len(selection))
 # 
 
 # YOUR CODE HERE 3
+
 #import matplotlib
 import matplotlib.pyplot as plt
 
+# create a line plot
 fig, ax = plt.subplots()
-ax.plot(selection['TEMP_C'],linestyle = 'solid',color='black', marker='o')
+ax.plot(selection['TEMP_C'],linestyle = 'solid',color='black', marker='o',markersize=3)
+plt.grid()
 plt.show()
+
 # add title and axis labels
 title="Helsinki-Vantaa Airport"
 xlabel="X-label"
@@ -70,11 +74,15 @@ ylabel="Y-label"
 plt.title(title)
 plt.xlabel("Time",size=12)
 plt.ylabel("Temperature（Celsius",size=12)
+
 # Set output file name
 outputfp = "temp_line_plot.png"
 
 # Save plot as image
 # YOUR CODE HERE 4
+#control the figure size
+plt.figure(figsize=(14,6))
+# save plot
 plt.savefig('temp_line_plot.png')
 import os
 

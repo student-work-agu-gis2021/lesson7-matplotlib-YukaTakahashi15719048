@@ -21,7 +21,7 @@ import pandas as pd
 # YOUR CODE HERE 1 to set data
 x = np.random.rand(1000)
 y = np.random.rand(1000)
-data = pd.DataFrame(zip(x,y))
+data = pd.DataFrame(zip(x,y), columns=['x', 'y'])
 
 # Check your random values
 print(data.head())
@@ -45,11 +45,20 @@ assert len(colors) == 1000, "There should be 1000 random numbers for colors"
 # ### Part 3 
 # 
 # #### Part 3.1
-data.plot(kind='scatter',s='50',c=colors,colormap='jet',edgecolor='black')
+
+ax=data.plot(x='x', y='y',kind='scatter',s=1000,c=colors,colormap='jet',edgecolor='black')
+ax
 # Create a scatter plot of points with random colors
 # 
 # #### Part 3.2
-matplotlib.pyplot
+import matplotlib.pyplot as plt
+
+title="My random candy points"
+xlabel="X-label"
+ylabel="Y-label"
+plt.title(title)
+plt.xlabel(xlabel,size=12)
+plt.ylabel(ylabel,size=12)
 # #### Part 3.3
 # 
 

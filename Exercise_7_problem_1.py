@@ -45,33 +45,35 @@ assert len(colors) == 1000, "There should be 1000 random numbers for colors"
 # ### Part 3 
 # 
 # #### Part 3.1
-
-ax=data.plot(x='x', y='y',kind='scatter',s=1000,c=colors,colormap='jet',edgecolor='black')
-ax
+# 
 # Create a scatter plot of points with random colors
 # 
 # #### Part 3.2
-import matplotlib.pyplot as plt
+# 
+# #### Part 3.3
+# 
 
+# Plot a scatter plot
+# YOUR CODE HERE 3
+ax=data.plot(x='x', y='y',kind='scatter',s=1000,c=colors,colormap='jet',edgecolor='black')
+ax.plot()
+# Add labels and title
+# YOUR CODE HERE 4
+#imprt matplotlib
+import matplotlib.pyplot as plt
+# add title and axis labels
 title="My random candy points"
 xlabel="X-label"
 ylabel="Y-label"
 plt.title(title)
 plt.xlabel(xlabel,size=12)
 plt.ylabel(ylabel,size=12)
-# #### Part 3.3
-# 
-
-# Plot a scatter plot
-# YOUR CODE HERE 3
-
-# Add labels and title
-# YOUR CODE HERE 4
-
 # Save the plot as a png file:
 outputfp = "my_first_plot.png"
 
 # YOUR CODE HERE 5
+
+plt.savefig('my_first_plot.png')
 
 # This test print statement should print the output filename of your figure
 print("Saved my first plot as:", outputfp)

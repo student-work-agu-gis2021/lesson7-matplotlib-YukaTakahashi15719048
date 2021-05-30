@@ -36,6 +36,7 @@ print(len(data))
 # - Store the selection in a new variable `selection`
 
 # YOUR CODE HERE 2
+selection = data[1:31]
 
 # Check that the data was read in correctly:
 selection.head()

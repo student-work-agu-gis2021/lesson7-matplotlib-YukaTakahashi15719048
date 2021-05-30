@@ -55,7 +55,7 @@ assert len(colors) == 1000, "There should be 1000 random numbers for colors"
 
 # Plot a scatter plot
 # YOUR CODE HERE 3
-ax=data.plot(x='x', y='y',kind='scatter',s=1000,c=colors,colormap='jet',edgecolor='black')
+ax=data.plot(x='x', y='y',kind='scatter',s=50,c=colors,colormap='jet',edgecolor='black')
 ax.plot()
 # Add labels and title
 # YOUR CODE HERE 4
